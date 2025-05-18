@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  color: white;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#box {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 250px;
+  font-size: 1rem;
+}
+
+button {
+  background: linear-gradient(135deg, #00bfff, #1e90ff);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  display: block;
+  object-fit: contain;
+}
+
+.temp {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 1.5rem;
+  margin-top: 5px;
+color: #2fd0de;
+font-weight: bold;
+}
+
+.humidity,
+.wind {
+  margin-top: 10px;
+  font-size: 1rem;
+color:#ffc638;
+font-weight: bold;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  min-height: 350px;
+  height: 100%;
+}
+
+.chart-container {
+  display: none;
+  width: 100%;
+  max-width: 350px;
+  min-height: 350px;
+  height: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#tempChart {
+  width: 100% !important;
+  height: 100% !important;
+}

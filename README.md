@@ -1,6 +1,6 @@
 # 🌦️ Weather App
 
-A responsive weather forecast web app built using HTML, CSS, and JavaScript. It fetches real-time weather data using the [OpenWeatherMap API](https://openweathermap.org/api).
+A responsive weather forecast web app built using HTML, CSS, and JavaScript. It fetches real-time weather data using the .
 
 ## 🚀 Features
 

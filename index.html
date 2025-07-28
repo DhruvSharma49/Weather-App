@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherScope</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <h1 class="logo">WeatherScope</h1>
+
+    <div class="search-box">
+      <input type="text" id="box" placeholder="Enter city" />
+      <button>Search</button>
+    </div>
+
+    <div class="weather-container">
+      <div class="weather-card">
+        <img src="" class="weather-icon" alt="Weather Icon" />
+        <h2 class="temp">--°C</h2>
+        <p class="location">Location</p>
+        <p class="humidity"> Humidity: --%</p>
+        <p class="wind">: -- km/h</p>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="tempChart" width="280" height="180"></canvas>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="Chart.js"></script>
+  </body>
+</html>

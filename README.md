@@ -12,4 +12,4 @@ A simple and responsive Weather App built with HTML, CSS, and JavaScript that fe
 
 📸 Screenshot
 
-![Preview](./weather-preview.png)
+![Preview](./Weather-preview.png)
